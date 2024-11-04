@@ -14,20 +14,12 @@ class GetPostsUseCase(
 ) : CoroutineUseCase<Unit, List<UserModel>?>(coroutineDispatcher), KoinComponent {
 
     override suspend fun execute(): Result<List<UserModel>?> {
-//        val postsFlow = flow { emit(flowardRepository.getPosts()) }
-//        val usersFlow = flow { emit(flowardRepository.getUsers()) }
-//        val combineResponse = postsFlow.zip(usersFlow) { post, user ->
-//            CombineData(
-//                userModel = user.succeeded
-//            )
-//        }
         return when (val result = flowardRepository.getPosts()) {
             is Result.Loading -> Result.Loading
             is Result.Success -> {
                 Result.Success(result.data)
             }
             is Result.Error -> Result.Error(SimpleError())
-
         }
     }
 }
