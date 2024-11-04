@@ -48,6 +48,10 @@ class ViewUsersViewModel(
         return shared.getUsersData().isNotEmpty()
     }
 
+    fun isUsersEmpty(): Boolean {
+        return shared.getUsersData().isEmpty()
+    }
+
     fun getUsersList(): List<UserModel> {
         return shared.getUsersData()
     }
