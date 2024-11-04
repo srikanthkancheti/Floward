@@ -51,7 +51,10 @@ class ViewUsersFragment : Fragment(), ItemClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        getFlowardPosts()
+        if (viewModel.isUsersEmpty())
+            getFlowardPosts()
+        else
+            setUpUsersListRecyclerView(viewModel.getUsersList())
     }
 
     private fun getFlowardPosts() {
