@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- UDS colors-->-
+    <!-- Basic -->
+    <attr name="textPrimary" format="color|reference" />
+    <attr name="textSecondary" format="color" />
+    <attr name="textSecondaryVariant" format="color" />
+    <attr name="textTertiary" format="color" />
+    <attr name="textSecondaryPressed" format="color" />
+    <attr name="textDisabled" format="color" />
+    <attr name="textSecondaryDisabled" format="color" />
+    <attr name="textOnColor" format="color" />
+    <attr name="textOnColorPressed" format="color" />
+    <attr name="textOnColorInactive" format="color" />
+    <attr name="textOnColorDisabled" format="color" />
+    <attr name="textOnColour" format="color" />
+
+    <!-- Containers colors -->
+    <attr name="backgroundScreen" format="color" />
+    <attr name="backgroundTransparentPrimary" format="color" />
+    <attr name="backgroundPrimary" format="color" />
+    <attr name="backgroundTransparentSecondary" format="color" />
+    <attr name="backgroundSecondary" format="color" />
+    <attr name="backgroundTransparentTertiary" format="color" />
+    <attr name="backgroundOverlay" format="color" />
+    <attr name="backgroundBorder" format="color" />
+    <attr name="backgroundTransparent" format="color" />
+
+
+</resources>

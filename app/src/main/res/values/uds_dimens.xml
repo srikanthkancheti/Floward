@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="uds_space_xxxs">4.00dp</dimen>
+    <dimen name="uds_space_xxs">8.00dp</dimen>
+    <dimen name="uds_space_xs">16.00dp</dimen>
+    <dimen name="uds_space_s">24.00dp</dimen>
+    <dimen name="uds_space_m">32.00dp</dimen>
+    <dimen name="uds_space_l">48.00dp</dimen>
+
+    <dimen name="uds_corner_radius_xs">4dp</dimen>
+    <dimen name="uds_corner_radius_s">8dp</dimen>
+    <dimen name="uds_corner_radius_m">16dp</dimen>
+
+    <dimen name="uds_searchbar_height">36.00dp</dimen>
+    <dimen name="image_view_height">100.00dp</dimen>
+    <dimen name="image_view_width">100.00dp</dimen>
+    <dimen name="user_image_view_height">250.00dp</dimen>
+</resources>

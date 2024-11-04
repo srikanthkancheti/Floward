@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/viewUsersFragment">
+    <fragment
+        android:id="@+id/viewUsersFragment"
+        android:name="com.floward.posts.ui.fragment.ViewUsersFragment"
+        android:label="ViewUsersFragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewUserPostsFragment"
+        android:name="com.floward.posts.ui.fragment.ViewUserPostsFragment"
+        android:label="ViewUserPostsFragment">
+    </fragment>
+    <action
+        android:id="@+id/action_viewUserPostsFragment"
+        app:destination="@id/viewUserPostsFragment" />
+</navigation>

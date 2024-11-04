@@ -1,0 +1,72 @@
+<resources>
+
+    <!--Base theme, all common styling here-->
+    <style name="Base.Daily" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <!--Material type attributes-->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Daily.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Daily.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.Daily.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.Daily.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.Daily.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Daily.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Daily.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Daily.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Daily.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Daily.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Daily.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Daily.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Daily.Overline</item>
+
+        <!--Platform attributes-->
+        <item name="android:navigationBarColor">@color/nav_bar</item>
+        <item name="android:statusBarColor">@color/immersive_sys_ui</item>
+
+        <item name="backgroundSecondary">@color/grey05</item>
+        <item name="textPrimary">@color/grey80</item>
+        <item name="textSecondary">@color/turquoise80</item>
+        <item name="textTertiary">@color/grey60</item>
+        <item name="textSecondaryVariant">@color/turquoise90</item>
+        <item name="textDisabled">@color/grey40</item>
+        <item name="textSecondaryPressed">@color/turquoise50</item>
+        <item name="textSecondaryDisabled">@color/turquoise40</item>
+
+    </style>
+
+    <style name="Daily" parent="@style/Base.Daily" />
+
+    <style name="Daily.Yellow">
+        <item name="colorPrimary">@color/daily_yellow_500</item>
+        <item name="colorPrimaryVariant">@color/daily_yellow_400</item>
+        <item name="colorSecondary">@color/daily_blue_700</item>
+        <item name="colorSecondaryVariant">@color/daily_blue_800</item>
+    </style>
+
+    <style name="Daily.Blue">
+        <item name="colorPrimary">@color/daily_blue_700</item>
+        <item name="colorPrimaryVariant">@color/daily_blue_800</item>
+        <item name="colorSecondary">@color/daily_yellow_500</item>
+        <item name="colorSecondaryVariant">@color/daily_yellow_400</item>
+    </style>
+
+    <style name="ThemeOverlay.Daily.Blue" parent="@style/ThemeOverlay.MaterialComponents.Light">
+        <item name="colorPrimary">@color/daily_blue_700</item>
+        <item name="colorPrimaryVariant">@color/daily_blue_800</item>
+        <item name="colorSecondary">@color/daily_yellow_500</item>
+        <item name="colorSecondaryVariant">@color/daily_yellow_400</item>
+        <item name="colorOnPrimary">#fff</item>
+    </style>
+
+    <style name="ThemeOverlay.Daily.Blue.Dark" parent="@style/ThemeOverlay.MaterialComponents.Dark">
+        <item name="colorPrimary">@color/daily_blue_700</item>
+        <item name="colorPrimaryVariant">@color/daily_blue_800</item>
+        <item name="colorSecondary">@color/daily_yellow_500</item>
+        <item name="colorSecondaryVariant">@color/daily_yellow_400</item>
+        <item name="colorOnPrimary">#fff</item>
+    </style>
+
+</resources>

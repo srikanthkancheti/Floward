@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: 'kotlin-kapt'
+
+apply from: '../dependencies.gradle'
+
+android {
+    compileSdk 35
+    namespace "com.floward.posts"
+    defaultConfig {
+        applicationId "com.floward.posts"
+        minSdkVersion 24
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "BASE_URL", "\"https://my-json-server.typicode.com/\""
+            buildConfigField "String", "BASE_URL_WITH_DOMAIN", "\"https://my-json-server.typicode.com/SharminSirajudeen/test_resources/\""
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            buildConfigField "String", "BASE_URL", "\"https://my-json-server.typicode.com/\""
+            buildConfigField "String", "BASE_URL_WITH_DOMAIN", "\"https://my-json-server.typicode.com/SharminSirajudeen/test_resources/\""
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding = true
+        buildConfig = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation libraries.kotlin
+
+    //Test Implementation
+    testImplementation testImplementationDeps.junit
+    testImplementation testImplementationDeps.androidxCore
+
+    //Android Test Implementation
+    androidTestImplementation androidTestImplementationDeps.androidxTest
+    androidTestImplementation androidTestImplementationDeps.espresso
+
+    // Logger (Don't use Log.d(...) anymore
+    implementation libraries.timber
+
+    // DI
+    implementation libraries.koinCore
+    implementation libraries.koinAndroid
+    implementation libraries.koinNavigation
+
+    // Android
+    implementation libraries.coreKtx
+    implementation libraries.appcompat
+    implementation libraries.navigation
+    implementation libraries.navigationUi
+    implementation libraries.constraintLayout
+
+    // Lifecycle
+    implementation libraries.lifecycleViewmodel
+    implementation libraries.lifecycleRuntime
+    implementation libraries.lifecycleLivedata
+    implementation libraries.lifecycleLivedataCore
+
+    // Material Design
+    implementation libraries.material
+
+    // okhttp
+    implementation libraries.gson
+    implementation libraries.okhttp
+    implementation libraries.okhttpLogging
+
+    implementation libraries.coreKtx
+    implementation libraries.appcompat
+    implementation libraries.material
+
+    // retrofit
+    implementation libraries.retrofit
+    implementation libraries.retrofitGson
+    implementation libraries.retrofitRxjava
+    implementation libraries.retrofitScalars
+    implementation libraries.retrofitMock
+    implementation libraries.coroutinesAdapter
+    implementation libraries.coroutinesCore
+
+    // Glide
+    implementation libraries.glide
+    annotationProcessor annotationProcessorDeps.glideCompiler
+
+    // Testing
+    testImplementation testImplementationDeps.junit
+    androidTestImplementation androidTestImplementationDeps.androidxTest
+    androidTestImplementation androidTestImplementationDeps.espresso
+}

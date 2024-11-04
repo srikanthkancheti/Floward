@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--theme colors-->
+    <color name="daily_yellow_200">#ffeb46</color>
+    <color name="daily_yellow_400">#ffc000</color>
+    <color name="daily_yellow_500">#ffde03</color>
+    <color name="daily_yellow_dark_primary">#242316</color>
+
+    <color name="daily_blue_200">#91a4fc</color>
+    <color name="daily_blue_700">#0336ff</color>
+    <color name="daily_blue_800">#0035c9</color>
+    <color name="daily_blue_dark_primary">#1c1d24</color>
+
+    <color name="daily_pink_200">#ff7597</color>
+    <color name="daily_pink_500">#ff0266</color>
+    <color name="daily_pink_600">#d8004d</color>
+    <color name="daily_pink_dark_primary">#24191c</color>
+    <color name="white">#ffffff</color>
+
+    <!--background protection for nav-bar, varied on Q+-->
+    <color name="immersive_sys_ui">#33000000</color>
+    <color name="nav_bar">@color/immersive_sys_ui</color>
+
+    <!-- Grey -->
+    <color name="grey05">#F2F2F2</color>
+    <color name="grey10">#E6E6E6</color>
+    <color name="grey15">#D9D9D9</color>
+    <color name="grey20">#CCCCCC</color>
+    <color name="grey30">#B3B3B3</color>
+    <color name="grey40">#999999</color>
+    <color name="grey50">#808080</color>
+    <color name="grey60">#666666</color>
+    <color name="grey70">#4D4D4D</color>
+    <color name="grey80">#333333</color>
+    <color name="grey90">#191919</color>
+    <color name="turquoise80">#00A49D</color>
+    <color name="turquoise90">#03857D</color>
+    <color name="turquoise50">#5AD1CC</color>
+    <color name="turquoise40">#8BABAA</color>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Floward</string>
+    <string name="generic_success_message">Everything worked out!</string>
+    <string name="generic_loading_message">Hold on, working some magic!</string>
+    <string name="generic_error_message">Uh oh… Something went wrong!</string>
+    <string name="right_arrow">right arrow</string>
+    <string name="user_image">User Image</string>
+</resources>

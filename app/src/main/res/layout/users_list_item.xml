@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="userData"
+            type="com.floward.posts.domain.model.UserModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/postCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/uds_space_xxs"
+        android:elevation="@dimen/card_view_elevation"
+        app:cardCornerRadius="@dimen/card_view_radius"
+        app:strokeColor="@color/daily_blue_200">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/uds_space_xs">
+
+            <com.floward.posts.ui.component.CircularImageView
+                android:id="@+id/userImageView"
+                android:layout_width="@dimen/image_view_height"
+                android:layout_height="@dimen/image_view_width"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/nameAndCountView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/userImageView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/rightArrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/uds_space_xs"
+                    android:textColor="@color/grey90"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/postsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/uds_space_xs"
+                    android:textColor="@color/grey90"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="?attr/textAppearanceBody1" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/rightArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right_arrow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/nameAndCountView"
+                android:contentDescription="@string/right_arrow" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
